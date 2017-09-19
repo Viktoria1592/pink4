@@ -410,14 +410,16 @@ body {
 
 .items-list {
     margin-top: 37px;
+    font-size: 0;
 }
 .item-catalog {padding-bottom: 60px;}
 
 .item-description {
-    float: left;
+    display: inline-block;
     width: 23.2558%;
     margin-right: 2.32558%;
     padding-bottom: 37px;
+    vertical-align: top;
 }
 
 .item-description:nth-child(4n) {

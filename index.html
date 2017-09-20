@@ -171,7 +171,8 @@
 
                 </p>
                 <form action="">
-                    <input type="email" name="email" placeholder="Электронная почта">
+                    <input type="email" name="email-block" id="email-block" placeholder="Электронная почта">
+                    <label for="email-block"></label>
                     <button type="submit" class="btn btn-2">Отправить</button>
 
                 </form>
@@ -217,9 +218,12 @@
         <button class="close" type="button" title="Закрыть"></button>
         <form action="">
             <p>Мы обязательно вам ответим!</p>
-            <input type="text" name="name" placeholder="Как вас зовут?">
+            <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+            <label for="name"></label>
             <input type="email" name="email" placeholder="Ваша почта для ответа?">
-            <textarea name="" id="" cols="30" rows="8" placeholder="Напишите что-нибудь..."></textarea>
+            <label for="email"></label>
+            <textarea name="description" id="description" cols="30" rows="8" placeholder="Напишите что-нибудь..."></textarea>
+            <label for="description"></label>
             <button type="submit" class="btn btn-send">Отправить</button>
         </form>
 

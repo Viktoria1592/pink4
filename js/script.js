@@ -44,8 +44,8 @@ window.addEventListener('keydown', function (event) {
 
         }
         if (
-            modaloverLay.classList.contains('overlay-active')) {
-            modaloverLay.classList.remove('overlay-active');
+            modalOverLay.classList.contains('overlay-active')) {
+            modalOverLay.classList.remove('overlay-active');
 
         }
 

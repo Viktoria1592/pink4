@@ -1,3 +1,56 @@
+var popup = document.querySelector (".pop-up");
+var write = document.querySelector (".btn-write");
+var close = pop-up.querySelector (".close");
+var yourName = pop-up.querySelector ("[name=name]");
+var yourEmail = pop-up.querySelector ("[name=email]");
+var form = popup.querySelector('form');
+var modalOverlay = document.querySelector (".overlay");
+var storage = localStorage.getItem('yourName');
+
+
+if (write) write.addEventListener ("click", function(event) {
+event.preventDefault();
+popup.classList.add("pop-up-active");
+modalOverlay.classList.add("overlay-active");
+if (storage) 
+{yourEmail.focus();
+yourName.value = storage;
+} 
+else {yourName.focus();}
+});
+
+if (close) close.addEventListener ("click", function(event) {
+event.preventDefault();
+popup.classList.remove("pop-up-active");
+modalOverlay.classList.remove("overlay-active");
+popup.classList.remove("pop-up-error");
+
+}
+
+form.addEventListener('submit', function (event) {
+    if (!yourName.value || !yourEmail.value) {
+        event.preventDefault();
+        popup.classList.add('pop-up-error');
+    } else {
+        localStorage.setItem('yourName', yourName.value);
+    }
+});
+
+window.addEventListener('keydown', function (event) {
+    if (event.keyCode === 27) {
+        if (
+            popup.classList.contains('pop-up-active')) {
+            popup.classList.remove('pop-up-active');
+
+        }
+        if (
+            modaloverLay.classList.contains('overlay-active')) {
+            modaloverLay.classList.remove('overlay-active');
+
+        }
+
+    }
+});
 ymaps.ready(initMap);
 function initMap() {
   var myMap;

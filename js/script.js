@@ -25,7 +25,7 @@ popup.classList.remove("pop-up-active");
 modalOverlay.classList.remove("overlay-active");
 popup.classList.remove("pop-up-error");
 
-}
+});
 
 form.addEventListener('submit', function (event) {
     if (!yourName.value || !yourEmail.value) {

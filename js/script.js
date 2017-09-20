@@ -1,8 +1,8 @@
 var popup = document.querySelector (".pop-up");
 var write = document.querySelector (".btn-write");
-var close = pop-up.querySelector (".close");
-var yourName = pop-up.querySelector ("[name=name]");
-var yourEmail = pop-up.querySelector ("[name=email]");
+var close = popup.querySelector (".close");
+var yourName = popup.querySelector ("[name=name]");
+var yourEmail = popup.querySelector ("[name=email]");
 var form = popup.querySelector('form');
 var modalOverlay = document.querySelector (".overlay");
 var storage = localStorage.getItem('yourName');

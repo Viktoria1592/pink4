@@ -802,7 +802,7 @@ margin-right: -8.72%;
     background-color: #f8f7f4;
 }
 
-.pop-up .pop-up-active {
+.pop-up-active {
     opacity: 1;
     pointer-events: all;
     visibility: visible;

@@ -20,7 +20,15 @@
                 </div>
                 <nav class="main-navigation">
                     <ul class="main-menu">
-                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="catalog.html">Каталог</a>
+                        <ul class="sub-menu">
+                            <li><span>Новинки</span></li>
+                            <li><a href="#">Сливочное</a></li>
+                            <li><a href="#">Щербеты</a></li>
+                            <li><a href="#">Фруктовый лед</a></li>
+                            <li><a href="#">Мелорин</a></li>
+                        </ul>
+                        </li>
                         <li><a href="#">Доставка и оплата</a></li>
                         <li><a href="#">О Компании</a></li>
                     </ul>
@@ -28,32 +36,35 @@
 
                 <div class="user-block">
                     <div class="user-information">
-                        <div class="search">
-                            <a href="#" class="search">
+                        <div class="menu-information search">
+                            <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16.7 16.68"><path d="M11.94,10.49h-.76l-.26-.26a6.21,6.21,0,1,0-.68.67l.26.26v.76l4.77,4.76,1.42-1.42Zm-5.73,0A4.29,4.29,0,1,1,10.5,6.2,4.29,4.29,0,0,1,6.21,10.49Z" fill="#fff" fill-rule="evenodd"/></svg>
-                            Поиск
                             <div class="search-window">
                                         <input type="text" placeholder="Что ищем?">
                                     </div>
                             </a>
                         </div>
-                        <a href="#" class="entry">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 20.063 19"><path d="M973,32.968v-0.96a3,3,0,0,1,3-3h11.059a3,3,0,0,1,3,3V44.986a3,3,0,0,1-3,3H976a3,3,0,0,1-3-3V44h2v2h13V31H975v1.968h-2Zm-3,8.046h6.029v2.743l7.027-5.3-7.027-5.3V35.9H970v5.114Z" fill="#fff" fill-opacity="0.99" fill-rule="evenodd" transform="translate(-970 -29)"/>
-</svg>
-
-                        Вход
-                        <div class="entry-block clearfix">
-           <input type="email" placeholder="Электронная почта">
-           <input type="password" placeholder="Пароль">
-           <button type="submit" class="btn btn-entry">Войти</button>
-           <a href="#">Забыли пароль?</a>
-                        <a href="#">Новая регистрация</a>
-
+                        <div class="entry menu-information">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 20.063 19"><path d="M973,32.968v-0.96a3,3,0,0,1,3-3h11.059a3,3,0,0,1,3,3V44.986a3,3,0,0,1-3,3H976a3,3,0,0,1-3-3V44h2v2h13V31H975v1.968h-2Zm-3,8.046h6.029v2.743l7.027-5.3-7.027-5.3V35.9H970v5.114Z" fill="#fff" fill-opacity="0.99" fill-rule="evenodd" transform="translate(-970 -29)"/>
+                            </svg>
+                            
+                            <a href="#">Вход
+                            <div class="entry-block clearfix">
+                                       <input type="email" id="email" placeholder="Электронная почта">
+                                       <label for="email"></label>
+                                       <input type="password" id="password" placeholder="Пароль">
+                                       <label for="password"></label>
+                                       <button type="submit" class="btn btn-entry">Войти</button>
+                                       <a href="#">Забыли пароль?</a>
+                            <a href="#">Новая регистрация</a>
+                            
+                                                </div>
+                                                </a>
+                        </div>
+                   <div class="menu-information basket">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 20.63 19.7"><path d="M7.25,16a1.87,1.87,0,1,0,1.87,1.87A1.87,1.87,0,0,0,7.25,16ZM19.07,2H5.1A1,1,0,0,0,6,1,1,1,0,0,0,5,0H1A1,1,0,0,0,1,2H3.13a3.68,3.68,0,0,0,.14,1.05L4.73,13.34A2,2,0,0,0,6.61,15H17.49a2,2,0,0,0,1.88-1.64l1.2-8.91C20.84,3.11,20.17,2,19.07,2Zm-.47,2.17-1.19,8.79s0,0,0,0H6.73l-1.31-9H18.62ZM16.25,16a1.87,1.87,0,1,0,1.87,1.87A1.87,1.87,0,0,0,16.25,16Z" fill="#fff"/></svg>
+                         <a href="#">Пусто</a>
                     </div>
-                    </a>
-                    <a href="#" class="basket">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 20.63 19.7"><path d="M7.25,16a1.87,1.87,0,1,0,1.87,1.87A1.87,1.87,0,0,0,7.25,16ZM19.07,2H5.1A1,1,0,0,0,6,1,1,1,0,0,0,5,0H1A1,1,0,0,0,1,2H3.13a3.68,3.68,0,0,0,.14,1.05L4.73,13.34A2,2,0,0,0,6.61,15H17.49a2,2,0,0,0,1.88-1.64l1.2-8.91C20.84,3.11,20.17,2,19.07,2Zm-.47,2.17-1.19,8.79s0,0,0,0H6.73l-1.31-9H18.62ZM16.25,16a1.87,1.87,0,1,0,1.87,1.87A1.87,1.87,0,0,0,16.25,16Z" fill="#fff"/></svg>
-                    Пусто</a>
                 </div>
                 <div class="main-contacts">
                     С 10 до 20, ежедневно<br><span>8 812 450-25-25</span>
@@ -209,7 +220,7 @@
                 <div class="logo-image">
                     <img src="img/htmlacademy.svg" alt="Htmlacademy">
                 </div>
-                <span>Сделано в <a href="#">HTML Academy</a> © 2016</span>
+                <span>Сделано в <a href="#">HTML Academy</a> © 2017</span>
 
             </div>
         </div>
@@ -218,11 +229,11 @@
         <button class="close" type="button" title="Закрыть"></button>
         <form action="">
             <p>Мы обязательно вам ответим!</p>
-            <input type="text" name="name" id="name" placeholder="Как вас зовут?">
-            <label for="name"></label>
-            <input type="email" name="email" placeholder="Ваша почта для ответа?">
-            <label for="email"></label>
-            <textarea name="description" id="description" cols="30" rows="8" placeholder="Напишите что-нибудь..."></textarea>
+            <input type="text" name="name" id="yourname" placeholder="Как вас зовут?">
+            <label for="yourname"></label>
+            <input type="email" name="email" id="youremail" placeholder="Ваша почта для ответа?">
+            <label for="youremail"></label>
+            <textarea name="description" id="description" cols="30" rows="6" placeholder="Напишите что-нибудь..."></textarea>
             <label for="description"></label>
             <button type="submit" class="btn btn-send">Отправить</button>
         </form>

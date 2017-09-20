@@ -892,6 +892,7 @@ margin-right: -8.72%;
     top: 9px;
     right: 1px;
 }
+.pop-up-error {animation: bounce 0.5s ;}
 
 .overlay {
     top: 0;
@@ -903,6 +904,7 @@ margin-right: -8.72%;
     position: fixed;
     background-color: rgba (0, 0, 0, 0.5);
 }
+.overlay-active {display:block;}
 
 .search-window {
     width: 345px;

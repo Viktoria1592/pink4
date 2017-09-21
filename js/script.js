@@ -3,9 +3,9 @@ var write = document.querySelector(".btn-write");
 var close = popup.querySelector(".close");
 var login = popup.querySelector("#yourname");
 var email = popup.querySelector("#youremail");
-var form = popup.querySelector('form');
+var form = popup.querySelector("form");
 var modalOverlay = document.querySelector(".overlay");
-var storage = localStorage.getItem('yourName');
+var storage = localStorage.getItem("login");
 
 
 write.addEventListener("click", function (event) {

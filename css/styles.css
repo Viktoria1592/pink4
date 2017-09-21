@@ -363,7 +363,7 @@ vertical-align: top;}
     fill: #000;
 }
 
-.user-information .search:hover~.search-window {
+.user-information .search:hover > .search-window {
     visibility: visible;
     display: block;
 }
@@ -373,7 +373,7 @@ vertical-align: top;}
     position: relative;
 }
 
-.user-information .entry:hover~.entry-block {
+.user-information .entry:hover > .entry-block {
     visibility: visible;
     display: block;
     position: absolute;

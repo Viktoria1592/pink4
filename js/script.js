@@ -1,17 +1,16 @@
-var popup = document.querySelector(".pop-up");
-var write = document.querySelector(".btn-write");
-var close = popup.querySelector(".close");
-var login = popup.querySelector("[name=login]");
-var email = popup.querySelector("[name=youremail]");
-var form = popup.querySelector("form");
-var modalOverlay = document.querySelector(".overlay");
-var storage = localStorage.getItem("login");
+var write = document.querySelector('.btn-write');
+var popup = document.querySelector('.pop-up');
+var close = popup.querySelector('.close');
+var overLay = document.querySelector('.overlay');
+var login = popup.querySelector('[name=login]');
+var form = popup.querySelector('form');
+var email = popup.querySelector('[name=youremail]');
+var storage = localStorage.getItem('login');
 
-
-write.addEventListener("click", function (event) {
+write.addEventListener('click', function (event) {
     event.preventDefault();
-    popup.classList.add("pop-up-active");
-    modalOverlay.classList.add("overlay-active");
+    popup.classList.add('pop-up-active');
+    overLay.classList.add('overlay-active');
     if (storage) {
         login.value = storage;
         email.focus();
@@ -20,12 +19,11 @@ write.addEventListener("click", function (event) {
     }
 });
 
-close.addEventListener("click", function (event) {
+close.addEventListener('click', function (event) {
     event.preventDefault();
-    popup.classList.remove("pop-up-active");
-    modalOverlay.classList.remove("overlay-active");
-    popup.classList.remove("pop-up-error");
-
+    popup.classList.remove('pop-up-active');
+    popup.classList.remove('pop-up-error');
+    overLay.classList.remove('overlay-active');
 });
 
 form.addEventListener('submit', function (event) {
@@ -45,13 +43,14 @@ window.addEventListener('keydown', function (event) {
 
         }
         if (
-            modalOverlay.classList.contains('overlay-active')) {
-            modalOverlay.classList.remove('overlay-active');
+            overLay.classList.contains('overlay-active')) {
+            overLay.classList.remove('overlay-active');
 
         }
 
     }
 });
+
 ymaps.ready(initMap);
 
 function initMap() {

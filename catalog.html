@@ -5,6 +5,8 @@
     <title>Glasy</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -59,7 +61,7 @@
                                                 
                         </div>
                     <div class="menu-information basket basket-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 20.63 19.7"><title>Ресурс 2</title><polygon points="4.5 3.34 5.63 13.47 18.25 13.59 19.63 3.34 4.5 3.34" fill="#ec573b" fill-rule="evenodd"/><path d="M7.25,16a1.87,1.87,0,1,0,1.87,1.87A1.87,1.87,0,0,0,7.25,16ZM19.07,2H5.1A1,1,0,0,0,6,1,1,1,0,0,0,5,0H1A1,1,0,0,0,1,2H3.13a3.68,3.68,0,0,0,.14,1.05L4.73,13.34A2,2,0,0,0,6.61,15H17.49a2,2,0,0,0,1.88-1.64l1.2-8.91C20.84,3.11,20.17,2,19.07,2Zm-.47,2.17-1.19,8.79s0,0,0,0H6.73l-1.31-9H18.62ZM16.25,16a1.87,1.87,0,1,0,1.87,1.87A1.87,1.87,0,0,0,16.25,16Z" fill="#343434"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 20.63 19.7"><polygon points="4.5 3.34 5.63 13.47 18.25 13.59 19.63 3.34 4.5 3.34" fill="#ec573b" fill-rule="evenodd"/><path d="M7.25,16a1.87,1.87,0,1,0,1.87,1.87A1.87,1.87,0,0,0,7.25,16ZM19.07,2H5.1A1,1,0,0,0,6,1,1,1,0,0,0,5,0H1A1,1,0,0,0,1,2H3.13a3.68,3.68,0,0,0,.14,1.05L4.73,13.34A2,2,0,0,0,6.61,15H17.49a2,2,0,0,0,1.88-1.64l1.2-8.91C20.84,3.11,20.17,2,19.07,2Zm-.47,2.17-1.19,8.79s0,0,0,0H6.73l-1.31-9H18.62ZM16.25,16a1.87,1.87,0,1,0,1.87,1.87A1.87,1.87,0,0,0,16.25,16Z" fill="#343434"/></svg>
 
                         <a href="#">2 товара</a>
                          <div class="fill-basket">
@@ -104,41 +106,52 @@
             <form action="" class="item-select">
                 <fieldset>
                     <legend>Сортировка:</legend>
-                    <label for="sort">
-                      <select name="sort-list" id="sort">
-                       <option value="popular" selected>по популярности</option>
-                        <option value="cheap">сначала недорогие</option>
-                        <option value="expensive">сначала дорогие</option>
-                        <option value="fat-content">по жирности</option>
-                    </select>
-                    </label>
+                    <div class="input-area sort-list">
+                        <label for="sort">
+                          <select name="sort-list" id="sort">
+                           <option value="popular" selected>по популярности</option>
+                            <option value="cheap">сначала недорогие</option>
+                            <option value="expensive">сначала дорогие</option>
+                            <option value="fat-content">по жирности</option>
+                        </select>
+                        </label>
+                    </div>
                 </fieldset>
                 <fieldset class="input-slider">
-                    <label for="cost-min">Цена: <input type="text" id="cost-min">руб. -</label>
-                    <label for="cost-max"><input type="text" id="cost-max">руб.</label>
-                    <input type="text" id="slider">
+                    <div class="output-area">
+                        <label for="minCost">Цена: <input type="text" id="minCost" value="100">руб. -</label>
+                        <label for="maxCost"><input type="text" id="maxCost" value="500">руб.</label>
+                    </div>
+                    <div class="range-class input-area">
+                        <div id="rating">
+                    </div>
+                    </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="quality-item">
                     <legend>Жирность:</legend>
-                    <input type="radio" name="quality" id="low"><label for="low">0%</label>
-                    <input type="radio" name="quality" id="middle"><label for="middle">до 10%</label>
-                    <input type="radio" name="quality" id="normal"><label for="normal">до 30%</label>
-                    <input type="radio" name="quality" id="high"><label for="high">выше 30%</label>
+                    <div class="input-area">
+                        <input type="radio" name="quality" id="low"><label for="low">0%</label>
+                        <input type="radio" name="quality" id="middle"><label for="middle">до 10%</label>
+                        <input type="radio" name="quality" id="normal"><label for="normal">до 30%</label>
+                        <input type="radio" name="quality" id="high"><label for="high">выше 30%</label>
+                    </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="quality-item fieldset-species">
                     <legend>Наполнители:</legend>
-                    <input type="checkbox" id="chocolate">
-                    <label for="chocolate">шоколадные</label>
-                    <input type="checkbox" id="sugar">
-                    <label for="sugar">сахарные присыпки</label>
-                    <input type="checkbox" id="fruits">
-                    <label for="fruits">фрукты</label>
-                    <input type="checkbox" id="syrop">
-                    <label for="syrop">сиропы</label>
-                    <input type="checkbox" id="jam">
-                    <label for="jam">джемы</label>
+                    <div class="input-area">
+                        <input type="checkbox" id="chocolate">
+                        <label for="chocolate">шоколадные</label>
+                        <input type="checkbox" id="sugar">
+                        <label for="sugar">сахарные присыпки</label>
+                        <input type="checkbox" id="fruits">
+                        <label for="fruits">фрукты</label>
+                        <input type="checkbox" id="syrop">
+                        <label for="syrop">сиропы</label>
+                        <input type="checkbox" id="jam">
+                        <label for="jam">джемы</label>
+                    </div>
                 </fieldset>
-                <button type="submit" class="btn">Применить</button>
+                <button type="submit" class="btn btn-filter">Применить</button>
             </form>
         </div>
         <div class="wrapper">
@@ -339,6 +352,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/rate.js"></script>
 </body>
 
 </html>

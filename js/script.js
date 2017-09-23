@@ -1,13 +1,16 @@
 var write = document.querySelector('.btn-write');
 var popup = document.querySelector('.pop-up');
-var close = popup.querySelector('.close');
-var overLay = document.querySelector('.overlay');
+if (popup) {var close = popup.querySelector('.close');
 var login = popup.querySelector('[name=login]');
 var form = popup.querySelector('form');
 var email = popup.querySelector('[name=youremail]');
-var storage = localStorage.getItem('login');
+var close = popup.querySelector('.close')};
+var overLay = document.querySelector('.overlay');
+if (login)
+	var storage = localStorage.getItem('login');
 
-write.addEventListener('click', function (event) {
+if(write) {
+	write.addEventListener('click', function (event) {
     event.preventDefault();
     popup.classList.add('pop-up-active');
     overLay.classList.add('overlay-active');
@@ -17,16 +20,20 @@ write.addEventListener('click', function (event) {
     } else {
         login.focus();
     }
-});
+})
+};
 
-close.addEventListener('click', function (event) {
+if (close) {
+	close.addEventListener('click', function (event) {
     event.preventDefault();
     popup.classList.remove('pop-up-active');
     popup.classList.remove('pop-up-error');
     overLay.classList.remove('overlay-active');
-});
+})
+};
 
-form.addEventListener('submit', function (event) {
+if(form)
+	form.addEventListener('submit', function (event) {
     if (!login.value || !email.value) {
         event.preventDefault();
         popup.classList.add('pop-up-error');
@@ -77,3 +84,4 @@ function initMap() {
 
     myMap.geoObjects.add(myPlacemark);
 }
+

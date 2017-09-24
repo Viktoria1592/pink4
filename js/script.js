@@ -58,8 +58,9 @@ window.addEventListener('keydown', function (event) {
     }
 });
 
+var mapFrame = document.getElementById('map');
 
-ymaps.ready(initMap);
+if (mapFrame) { ymaps.ready(initMap) };
 
 function initMap() {
     var myMap;

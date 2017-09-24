@@ -64,4 +64,39 @@ jQuery("input#maxCost").change(function () {
 
     jQuery("#rating").slider("values", 1, value2);
 
-})
+});
+
+$('.search-window-input').on('input', function(){
+    var $this = $(this);
+    if ($this.val() == '') {
+        $this.removeClass('input-filled');
+    } else {
+        $this.addClass('input-filled');
+    }
+});
+$('.entry-input').on('input', function(){
+    var $this = $(this);
+    if ($this.val() == '') {
+        $this.removeClass('input-filled');
+    } else {
+        $this.addClass('input-filled');
+    }
+});
+$('.pop-up-input').on('input', function(){
+    var $this = $(this);
+    if ($this.val() == '') {
+        $this.removeClass('input-filled');
+    } else {
+        $this.addClass('input-filled');
+    }
+});
+$('.subscription-input').on('input', function(){
+    var $this = $(this);
+    if ($this.val() == '') {
+        $this.removeClass('input-filled');
+    } else {
+        $this.addClass('input-filled');
+    }
+});
+
+

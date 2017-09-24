@@ -91,7 +91,7 @@ body {
     color: #ffffff;
     text-align: center;
     padding-bottom: 35px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -384,7 +384,7 @@ body {
     top: 100%;
 }
 
-.search-window input {
+.search-window-input {
     width: 310px;
     margin: 0 auto;
     border: 1px solid #d3d3d2;
@@ -398,12 +398,13 @@ body {
     box-sizing: border-box;
     background-color: #ffffff;
 }
-
-.search-window input:focus+label {
+.input-filled +label,
+.search-window-input:focus+label {
     transform: translateY(-27px);
     font-size: 11px;
     color: #5b9ddf;
 }
+.search-window .input-filled +label {font-size: 11px;}
 
 .search-window label {
     font-size: 14px;
@@ -417,11 +418,11 @@ body {
     left: 10px;
 }
 
-.search-window input:hover {
+.search-window-input:hover {
     border: 2px solid #c7c6c5;
 }
 
-.search-window input:focus {
+.search-window-input:focus {
     border: 2px solid #8fbdec;
 }
 
@@ -471,7 +472,7 @@ body {
     color: #ec593c;
 }
 
-.entry-block input {
+.entry-input {
     width: 240px;
     margin: 0 auto;
     border: 1px solid #d3d3d2;
@@ -487,19 +488,20 @@ body {
     margin-bottom: 15px;
 }
 
-.entry-block input:hover {
+.entry-input:hover {
     border: 2px solid #c7c6c5;
 }
 
-.entry-block input:focus {
+.entry-input:focus {
     border: 2px solid #8fbdec;
 }
 
-.entry-block input:focus+label {
+.entry-input:focus+label {
     transform: translateY(-27px);
     font-size: 11px;
     color: #5b9ddf;
 }
+.entry-point .input-filled +label {font-size: 11px;}
 
 .entry-point {
     position: relative;
@@ -1039,7 +1041,7 @@ body {
     min-height: 86px;
 }
 
-.subscription input {
+.subscription-input {
     border: 1px solid #d3d3d2;
     border-radius: 5px;
     outline: none;
@@ -1052,6 +1054,7 @@ body {
     margin-left: 26px;
     box-sizing: border-box;
     width: 50%;
+    font-weight: 500;
 }
 
 .subscription label {
@@ -1065,11 +1068,12 @@ body {
     left: 30px;
 }
 
-.subscription input:focus+label {
+.subscription-input:focus+label {
     transform: translateY(-27px);
     font-size: 11px;
     color: #5b9ddf;
 }
+.subscription .input-filled +label {font-size: 11px;}
 
 #map {
     background-image: url(../img/Layer%203.jpg);
@@ -1620,20 +1624,17 @@ select:focus {
     color: #656565;
 }
 
-.pop-up input:focus+label,
-.pop-up textarea:focus+label {
+.pop-up-input:focus+label {
     transform: translateY(-27px);
     font-size: 11px;
     color: #5b9ddf;
 }
 
-.pop-up input:hover,
-.pop-up textarea:hover {
+.pop-up-input:hover {
     border: 2px solid #c7c6c5;
 }
 
-.pop-up input:focus,
-.pop-up textarea:focus {
+.pop-up-input:focus {
     border: 2px solid #8fbdec;
 }
 
@@ -1642,6 +1643,7 @@ select:focus {
     margin-bottom: 20px;
     display: block;
 }
+.pop-up .input-filled +label {font-size: 11px;}
 
 .pop-up textarea {
     width: 100%;

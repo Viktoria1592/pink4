@@ -3,8 +3,7 @@ var popup = document.querySelector('.pop-up');
 if (popup) {var close = popup.querySelector('.close');
 var login = popup.querySelector('[name=login]');
 var form = popup.querySelector('form');
-var email = popup.querySelector('[name=youremail]');
-var close = popup.querySelector('.close')};
+var email = popup.querySelector('[name=youremail]')};
 var overLay = document.querySelector('.overlay');
 if (login)
 	var storage = localStorage.getItem('login');
@@ -23,7 +22,7 @@ if(write) {
 })
 };
 
-if (close) {
+if (popup) {
 	close.addEventListener('click', function (event) {
     event.preventDefault();
     popup.classList.remove('pop-up-active');
@@ -32,7 +31,7 @@ if (close) {
 })
 };
 
-if(form)
+if(form) {
 	form.addEventListener('submit', function (event) {
     if (!login.value || !email.value) {
         event.preventDefault();
@@ -40,7 +39,8 @@ if(form)
     } else {
         localStorage.setItem('login', login.value);
     }
-});
+})
+};
 
 window.addEventListener('keydown', function (event) {
     if (event.keyCode === 27) {
@@ -57,6 +57,7 @@ window.addEventListener('keydown', function (event) {
 
     }
 });
+
 
 ymaps.ready(initMap);
 
@@ -186,7 +187,7 @@ $('.subscription-input').on('input', function(){
     } else {
         $this.addClass('input-filled');
     }
-});
+	});
 
 
 

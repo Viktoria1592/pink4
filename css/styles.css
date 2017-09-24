@@ -1711,8 +1711,7 @@ select:focus {
     100% {
         top: 50%;
         left: 50%;
-    }
-    ;
+    };
 }
 
 @keyframes appearing {
@@ -1723,8 +1722,7 @@ select:focus {
     100% {
         top: 50%;
         left: 50%;
-    }
-    ;
+    };
 }
 
 .pop-up p {
@@ -1850,8 +1848,7 @@ select:focus {
     }
     100% {
         left: 50%;
-    }
-    ;
+    };
 }
 
 @keyframes bounce {
@@ -1863,8 +1860,7 @@ select:focus {
     }
     100% {
         left: 50%;
-    }
-    ;
+    };
 }
 
 .overlay {
@@ -1875,7 +1871,7 @@ select:focus {
     z-index: 300;
     display: none;
     position: fixed;
-    background-color: rgba (0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay-active {

@@ -33,13 +33,15 @@
 
             <div class="user-block">
                 <div class="user-information">
-                  <div class="menu-information search">
+                   <div class="menu-information search">
                             <a href="#" class="search-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16.7 16.68"><path d="M11.94,10.49h-.76l-.26-.26a6.21,6.21,0,1,0-.68.67l.26.26v.76l4.77,4.76,1.42-1.42Zm-5.73,0A4.29,4.29,0,1,1,10.5,6.2,4.29,4.29,0,0,1,6.21,10.49Z" fill="#fff" fill-rule="evenodd"/></svg></a>
                             <div class="search-window">
-                                        <input type="text" placeholder="Что ищем?">
+                                        <div class="entry-point">
+                                            <input type="text" id="search-text">
+                                            <label for="search-text">Что ищем?</label>
+                                        </div>
                                     </div>
-                            
                         </div>
                      <div class="entry menu-information">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 20.063 19"><path d="M973,32.968v-0.96a3,3,0,0,1,3-3h11.059a3,3,0,0,1,3,3V44.986a3,3,0,0,1-3,3H976a3,3,0,0,1-3-3V44h2v2h13V31H975v1.968h-2Zm-3,8.046h6.029v2.743l7.027-5.3-7.027-5.3V35.9H970v5.114Z" fill="#fff" fill-opacity="0.99" fill-rule="evenodd" transform="translate(-970 -29)"/>
@@ -48,10 +50,14 @@
                             <a href="#">Вход</a>
                             <div class="entry-block clearfix">
                                       <form action="">
-                                            <input type="email" id="email" placeholder="Электронная почта">
-                                           <label for="email"></label>
-                                           <input type="password" id="password" placeholder="Пароль">
-                                           <label for="password"></label>
+                                            <div class="entry-point">
+                                                <input type="email" id="email">
+                                                <label for="email">Электронная почта</label>
+                                            </div>
+                                           <div class="entry-point">
+                                               <input type="password" id="password">
+                                               <label for="password">Пароль</label>
+                                           </div>
                                            <button type="submit" class="btn btn-entry">Войти</button>
                                        </form>
                                        <a href="#">Забыли пароль?</a>
@@ -156,7 +162,6 @@
         </div>
         <div class="wrapper">
         <div class="items-list clearfix item-catalog">
-            <div class="item-point">
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -168,8 +173,8 @@
                     <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+            
+           
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/2.png" alt="Сливочно-кофейное с кусочками шоколада">
@@ -181,8 +186,8 @@
                     <a href="#">Сливочно-кофейное с кусочками шоколада</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+            
+            
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -194,8 +199,8 @@
                     <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+           
+            
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/4.png" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -207,8 +212,8 @@
                     <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+            
+            
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/5.png" alt="Сливочное с брусничным джемом">
@@ -220,8 +225,8 @@
                     <a href="#">Сливочное с брусничным джемом</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+           
+            
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/6.png" alt="Сливочно-черничное с цельными ягодами черники">
@@ -233,8 +238,8 @@
                     <a href="#">Сливочно-черничное с цельными ягодами черники</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+            
+           
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/7.png" alt="Сливочно-лимонное с карамельной присыпкой">
@@ -246,8 +251,8 @@
                     <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+           
+            
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/8.png" alt="Сливочное с шоколадной стружкой">
@@ -259,8 +264,8 @@
                     <a href="#">Сливочное с шоколадной стружкой</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+           
+            
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/9.png" alt="Сливочно-ванильное с кусочками шоколада">
@@ -272,8 +277,8 @@
                     <a href="#">Сливочно-ванильное с кусочками шоколада</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+            
+           
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/10.png" alt="Сливочноe с ментоловым сиропом">
@@ -285,8 +290,8 @@
                     <a href="#">Сливочноe с ментоловым сиропом</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+            
+           
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/11.png" alt="Сливочное с кусочками черного шоколада">
@@ -298,8 +303,8 @@
                     <a href="#">Сливочное с кусочками черного шоколада</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
-            <div class="item-point">
+            
+           
                 <div class="item-description">
                     <div class="item">
                         <img class="ice-cream-item" src="img/12.png" alt="Сливочное с мятным сиропом">
@@ -311,10 +316,10 @@
                     <a href="#">Сливочное с мятным сиропом</a>
                     <button class="btn btn-item">Быстрый просмотр</button>
                 </div>
-            </div>
+            
         </div>
         </div>
-        <div class="wrapper">
+        <div class="wrapper clearfix">
             <div class="pages">
 
                 <a href="#prev" class="prev"></a>

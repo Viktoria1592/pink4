@@ -978,7 +978,7 @@ body {
 }
 
 .item .price-description::after {
-    background: url("../img/%D0%A0.svg") no-repeat;
+    background-image: url("../img/%D0%A0.svg");
     position: absolute;
     content: "";
     top: 10px;

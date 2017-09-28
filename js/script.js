@@ -6,7 +6,12 @@ var form = popup.querySelector('form');
 var email = popup.querySelector('[name=youremail]')};
 var overLay = document.querySelector('.overlay');
 if (login)
-	var storage = localStorage.getItem('login');
+{var storage = localStorage.getItem('login')};
+var entryBlock = document.querySelector ('.entry-block');
+var entryForm = entryBlock.querySelector('form');
+if (entryBlock) 
+{var entryEmail = entryBlock.querySelector ('[type=email]');
+var entryPass = entryBlock.querySelector ('[type=password]')};
 
 if(write) {
 	write.addEventListener('click', function (event) {
@@ -57,6 +62,16 @@ window.addEventListener('keydown', function (event) {
 
     }
 });
+
+if(entryForm) {
+	entryForm.addEventListener('submit', function (event) {
+    if (!entryEmail.value || !entryPass.value) {
+        event.preventDefault();
+    } else {
+        localStorage.setItem('entryEmail', entryEmail.value);
+    }
+})
+};
 
 var mapFrame = document.getElementById('map');
 

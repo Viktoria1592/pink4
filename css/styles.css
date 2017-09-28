@@ -40,6 +40,7 @@ body {
     line-height: 22px;
     background-color: #8ba697;
     min-width: 815px;
+    max-width: 1920px;
 }
 
 #slider-1:checked~.slider-wrapper {

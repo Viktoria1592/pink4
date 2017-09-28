@@ -1,16 +1,14 @@
 var write = document.querySelector('.btn-write');
 var popup = document.querySelector('.pop-up');
+var overLay = document.querySelector('.overlay');
+var entryBlock = document.querySelector ('.entry-block');
+var entryForm = entryBlock.querySelector('form');
 if (popup) {var close = popup.querySelector('.close');
 var login = popup.querySelector('[name=login]');
 var form = popup.querySelector('form');
 var email = popup.querySelector('[name=youremail]')};
-var overLay = document.querySelector('.overlay');
-if (login)
-{var storage = localStorage.getItem('login')};
-var entryBlock = document.querySelector ('.entry-block');
-var entryForm = entryBlock.querySelector('form');
-if (entryBlock) 
-{var entryEmail = entryBlock.querySelector ('[type=email]');
+if (login) {var storage = localStorage.getItem('login')};
+if (entryBlock) {var entryEmail = entryBlock.querySelector ('[type=email]');
 var entryPass = entryBlock.querySelector ('[type=password]')};
 
 if(write) {

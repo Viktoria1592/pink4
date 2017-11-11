@@ -1712,7 +1712,8 @@ select:focus {
     100% {
         top: 50%;
         left: 50%;
-    };
+    }
+    ;
 }
 
 @keyframes appearing {
@@ -1723,7 +1724,8 @@ select:focus {
     100% {
         top: 50%;
         left: 50%;
-    };
+    }
+    ;
 }
 
 .pop-up p {
@@ -1764,6 +1766,7 @@ select:focus {
     font-weight: 400;
     opacity: 1;
     color: #656565;
+    border: none;
 }
 
 .pop-up-input:focus+label {
@@ -1849,7 +1852,8 @@ select:focus {
     }
     100% {
         left: 50%;
-    };
+    }
+    ;
 }
 
 @keyframes bounce {
@@ -1861,7 +1865,8 @@ select:focus {
     }
     100% {
         left: 50%;
-    };
+    }
+    ;
 }
 
 .overlay {

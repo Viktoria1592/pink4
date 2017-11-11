@@ -1362,6 +1362,7 @@ footer a:active {
     color: #ffffff;
     left: 100%;
     position: absolute;
+    text-decoration: none;
 }
 
 .pages {

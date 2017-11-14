@@ -1514,28 +1514,12 @@ footer a:active {
 
 .sort-list:hover select {
     color: #000000;
-    font-weight: 700;
 }
 
 .sort-list:active {
     background-color: #ffffff;
     cursor: pointer;
 }
-
-
-/*
-.sort-list:active select {
-    color: #ffffff;
-    font-weight: 700;
-}
-*/
-
-
-/*
-select:focus {
-    color: #000000;
-}
-*/
 
 .input-max {
     width: 100%;

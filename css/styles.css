@@ -44,17 +44,17 @@ body {
 }
 
 #slider-1:checked~.slider-wrapper {
-    background: #8ba697 url("../img/Мороженко 1-slide.png") no-repeat top center;
+    background: #8ba697 url("../img/ice-cream-1-slide.png") no-repeat top center;
     /*    background-size: 100%;*/
 }
 
 #slider-2:checked~.slider-wrapper {
-    background: #8b98a8 url("../img/Мороженко 2-slide.png") no-repeat top center;
+    background: #8b98a8 url("../img/ice-cream-2-slide.png") no-repeat top center;
     /*    background-size: 100%;*/
 }
 
 #slider-3:checked~.slider-wrapper {
-    background: #9f8d86 url("../img/Мороженко 3-slide.png") no-repeat top center;
+    background: #9f8d86 url("../img/ice-cream-3-slide.png") no-repeat top center;
     /*    background-size: 100%;*/
 }
 
@@ -1741,7 +1741,6 @@ footer a:active {
         top: 50%;
         left: 50%;
     }
-    ;
 }
 
 @keyframes appearing {
@@ -1753,7 +1752,6 @@ footer a:active {
         top: 50%;
         left: 50%;
     }
-    ;
 }
 
 .pop-up p {
@@ -1880,7 +1878,6 @@ footer a:active {
     100% {
         left: 50%;
     }
-    ;
 }
 
 @keyframes bounce {
@@ -1893,7 +1890,6 @@ footer a:active {
     100% {
         left: 50%;
     }
-    ;
 }
 
 .overlay {

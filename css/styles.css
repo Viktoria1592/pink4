@@ -1525,6 +1525,7 @@ footer a:active {
     width: 100%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    white-space: nowrap;
 }
 
 .input-area input {
@@ -1540,6 +1541,8 @@ footer a:active {
 .quality-item label {
     padding-left: 47px;
     position: relative;
+    display: inline-block;
+    /*    padding-left: 25px;*/
 }
 
 .quality-item label::before,

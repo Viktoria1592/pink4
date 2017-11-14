@@ -23,6 +23,7 @@ if (write) {
         overLay.classList.add('overlay-active');
         if (storage) {
             login.value = storage;
+            login.classList.add('input-filled');
             email.focus();
         }
         else {
@@ -68,6 +69,10 @@ if (entryForm) {
             localStorage.setItem('entryEmail', entryEmail.value);
         }
     })
+};
+if (entryEmail.value) {
+    entryPass.focus();
+    entryEmail.classList.add('input-filled')
 };
 var mapFrame = document.getElementById('map');
 if (mapFrame) {

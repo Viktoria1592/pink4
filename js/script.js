@@ -70,10 +70,10 @@ if (entryForm) {
         }
     })
 };
-//if (entryEmail.value) {
-//    entryPass.focus();
-//    entryEmail.classList.add('input-filled')
-//};
+if (entryEmail.value) {
+    entryPass.focus();
+    entryEmail.classList.add('input-filled')
+};
 var mapFrame = document.getElementById('map');
 if (mapFrame) {
     ymaps.ready(initMap)
